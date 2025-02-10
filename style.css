@@ -22,3 +22,130 @@
 }
 /* Estilos para o cabeçalho */
 /* 2ª Digitação (Aqui) */
+
+header {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Dancing Script" , serif;
+    font-size: 2.5 rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 5px;
+
+}
+
+nav a:hover {
+    color: black;
+    background-color: #c3c3c3;
+    border-radius: 3px;
+
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: url(img/london.jpg) no-repeat center fixed;
+    background: cover;
+}
+
+/* Barra lateral esquerda */
+.sidebar {
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-secundario);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* estilos para o conteudo principal */
+.main-content {
+    flex: 2;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.subtittle {
+    color: var(--texto-secundario);
+    font-size: 2.5rem;
+}
+
+/* estilos para a barra lateral direita */
+.secondary-content {
+    /* neste caso usará 25% restantes da largura */
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-terciario);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* estilos para os itens das listas */
+li {
+    padding: 9px;
+} 
+
+/* Estilos para o rodapé */
+footer {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* estilos de formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid var(--texto-cinza);
+    border-radius: 5px;
+}
+
+button {
+    background: var(--fundo-escuro);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #005f8a;
+}
+
+/* Estilos para as imagens */
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-widht: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
